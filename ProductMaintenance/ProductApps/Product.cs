@@ -33,6 +33,11 @@ namespace ProductApps
             set { totalPayment = value; }
         }
 
+        public decimal TotalPaymentWithWrap
+        {
+            get { return totalPayment; }
+            set { totalPayment = value; }
+        }
 
         private decimal Delivery
         {
@@ -65,5 +70,7 @@ namespace ProductApps
         {
             TotalPayment = (Price * Quantity) + 25;
         }
+
+        
     }
 }
